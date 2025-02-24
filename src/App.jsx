@@ -30,8 +30,9 @@ const App = () => {
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar h-full w-full bg-black sm:flex justify-center items-center overflow-hidden flex-row sm:px-6 sm:py-[0.94rem]">
-        <div className="navbar-logo h-full flex items-center z-[30]">
+      <nav className="navbar h-full w-full bg-black sm:flex justify-center items-center overflow-hidden sm:px-6 sm:py-[0.94rem]">
+        <div className="absolute top-0 bg-black h-[5rem] w-full z-[10]"></div>
+        <div className="navbar-logo h-full flex items-center z-[110]">
           <a href="https://www.ted.com/tedx/events?autocomplete_filter=TEDxBVCOE" className="nav-a flex">
             <img src={navLogo} alt="" className="nav_logo w-[14rem]" />
           </a>
@@ -45,7 +46,7 @@ const Hero = () => {
   return (
     <>
       <div className="Hero overflow-hidden z-[20]">
-        <img src={homeLogo} alt="" className="bg-img sm:h-[40rem] h-screen w-full object-cover object-center items-center justify-center" />
+        <img src={homeLogo} alt="" className="absolute top-0 bg-img h-screen w-full object-cover object-center items-center justify-center" />
         <div className="top-0 z-[20] bg-black opacity-90 absolute h-screen w-full">
           <Example />
         </div>

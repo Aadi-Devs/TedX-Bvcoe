@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
+
+
+
+
 @media (min-width: 320px) and (max-width: 480px) {
 
 .navbar {
@@ -9,11 +17,8 @@
     height: 5rem;
   }
 
-.navbar_logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 80;
+.navbar-logo {
+    z-index: 110;
 }
 
 .Center-Text {
@@ -41,15 +46,9 @@
 }
 
 .nav_logo{
-    z-index: 100;;
+    z-index: 110;;
 }
 
-
-.bg-img{
-    height: 40rem;
-    object-fit: cover;
-    object-position: center;
-}
 
 .Cards{
     height: 8rem;
