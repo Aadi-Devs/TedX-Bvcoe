@@ -45,13 +45,12 @@ const Navbar = () => {
 const Hero = () => {
   return (
     <>
-      <div className="Hero overflow-hidden z-[20]">
+      <div className="Hero flex items-center justify-center overflow-hidden z-[20]">
         <img src={homeLogo} alt="" className="absolute top-0 bg-img h-screen w-full object-cover object-center items-center justify-center" />
         <div className="top-0 z-[20] bg-black opacity-90 absolute h-screen w-full">
           <Example />
         </div>
-
-        <div className="Center-Text absolute flex sm:flex-row flex-row sm:top-80 top-40 w-full sm:justify-evenly sm:gap-0 gap-24 items-center">
+        <div className="Center-Text absolute flex sm:top-80 top-40 w-full justify-center items-center">
           <h1 className="Center_Text-h1 sm:text-8xl text-red-600 z-[20] font-semibold text-center">
             Coming soon - March 2025
           </h1>
@@ -59,6 +58,7 @@ const Hero = () => {
             <BubbleText />
           </div> */}
         </div>
+
       </div>
     </>
   );
