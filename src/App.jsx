@@ -30,10 +30,10 @@ const App = () => {
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar h-full w-full bg-black sm:flex hidden justify-center items-center overflow-hidden flex-row sm:px-6 sm:py-[0.94rem] z-[50]">
-        <div className="navbar-brand z-[30]">
-          <a href="https://www.ted.com/tedx/events?autocomplete_filter=TEDxBVCOE">
-            <img src={navLogo} alt="" className="w-[14rem]" />
+      <nav className="navbar h-full w-full bg-black sm:flex justify-center items-center overflow-hidden flex-row sm:px-6 sm:py-[0.94rem]">
+        <div className="navbar-logo h-full flex items-center z-[30]">
+          <a href="https://www.ted.com/tedx/events?autocomplete_filter=TEDxBVCOE" className="nav-a flex">
+            <img src={navLogo} alt="" className="nav_logo w-[14rem]" />
           </a>
         </div>
       </nav>
@@ -44,15 +44,15 @@ const Navbar = () => {
 const Hero = () => {
   return (
     <>
-      <div className="overflow-hidden z-[20]">
-        <img src={homeLogo} alt="" className="h-[40rem] w-full" />
+      <div className="Hero overflow-hidden z-[20]">
+        <img src={homeLogo} alt="" className="bg-img sm:h-[40rem] h-screen w-full object-cover object-center items-center justify-center" />
         <div className="top-0 z-[20] bg-black opacity-90 absolute h-screen w-full">
           <Example />
         </div>
 
-        <div className="absolute flex sm:flex-row flex-row sm:top-80 top-40 w-full sm:justify-evenly sm:gap-0 gap-24 items-center">
-          <h1 className="sm:text-9xl text-red-600 z-[20] font-semibold">
-            COMING SOON!!
+        <div className="Center-Text absolute flex sm:flex-row flex-row sm:top-80 top-40 w-full sm:justify-evenly sm:gap-0 gap-24 items-center">
+          <h1 className="Center_Text-h1 sm:text-8xl text-red-600 z-[20] font-semibold text-center">
+            Coming soon - March 2025
           </h1>
           {/* <div className="z-[10]">
             <BubbleText />
@@ -189,7 +189,7 @@ const MouseImageTrail = ({
 
       {images.map((img, index) => (
         <img
-          className="pointer-events-none absolute left-0 top-0 h-48 w-auto rounded-xl border-2 border-red-600 bg-white object-cover opacity-0"
+          className="Cards pointer-events-none absolute left-0 top-0 h-48 w-auto rounded-xl border-2 border-red-600 bg-white object-cover opacity-0"
           src={img}
           alt={`Mouse move image ${index}`}
           key={index}

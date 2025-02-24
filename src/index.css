@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+.navbar {
+    z-index: 110;
+    height: 5rem;
+  }
+
+.navbar_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 80;
+}
+
+.Center-Text {
+    justify-content: center;
+    align-items: center;
+    top: 18.5rem;
+    padding: 10px;
+}
+
+.Center_Text-h1 {
+    font-size: 3rem;
+}
+
+.nav-a{
+    z-index: 90;
+    align-items: center;
+    height: 3rem;
+
+}
+
+.nav-a img{
+    width: 134px;
+    height: 30px;
+    margin-left: 16px;
+}
+
+.nav_logo{
+    z-index: 100;;
+}
+
+
+.bg-img{
+    height: 40rem;
+}
+
+.Cards{
+    height: 8rem;
+}
+
+}
