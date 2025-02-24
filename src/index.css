@@ -46,7 +46,9 @@
 
 
 .bg-img{
-    height: 40rem;
+    height: 44rem;
+    object-fit: cover;
+    object-position: center;
 }
 
 .Cards{
